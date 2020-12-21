@@ -4,7 +4,13 @@ public class Main{
 	public static void main(String[] args){
 		while(true){
 			System.out.println("Version 1");
-			Thread.sleep(10000);
+			 try {
+				 Thread.sleep(10000);
+			 }
+			catch (Exception e)
+			{
+				e.printStackTrace();
+			}
 		}
 	}
 }
