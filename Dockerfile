@@ -1,2 +1,5 @@
-FROM ubuntu:latest
-ENTRYPOINT /script.sh ; /bin/bash
+FROM java:8
+COPY ./Main.java /
+WORKDIR /
+RUN javac Main.java
+CMD ["java", "Main"]
